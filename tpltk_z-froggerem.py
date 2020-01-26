@@ -141,8 +141,9 @@ class App:
 				self.frog.move(-1, 0)
 			if event.type == KEYDOWN and event.key == K_RIGHT:
 				self.frog.move(1, 0)
-			if event.type == KEYDOWN and event.key == K_UP:
+			if blink.value == 1:
 				self.frog.move(0, -1)
+				blink.value = 0
 			if event.type == KEYDOWN and event.key == K_DOWN:
 				self.frog.move(0, 1)
 
