@@ -217,6 +217,3 @@ class App:
 if __name__ == "__main__":
 	gameApp = App()
 	gameApp.execute()
-
-# Zakończenie podprocesów
-    proc_blink_det.join()
